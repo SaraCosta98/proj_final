@@ -1,0 +1,252 @@
+@import url(https://db.onlinewebfonts.com/c/1863d94ae5892953c4495758041b125d?family=Swiss+721+Condensed);
+
+html {
+    font-family: "Swiss 721 Condensed";
+    background-color: #F2F19B;
+    scroll-behavior: smooth;
+    margin: 5px 55px 5px 55px;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    /* Change this to the width you desire */
+    height: 100%;
+    overflow: hidden;
+}
+
+/* For Webkit browsers (like Chrome and Safari) */
+::-webkit-scrollbar {
+    display: none;
+}
+
+.square {
+    width: 50px;
+    height: 5.1875rem;
+    flex-shrink: 0;
+
+    position: fixed;
+    top: 11%;
+    /* Adjust as needed */
+    left: 0;
+    transform: translateY(-50%);
+    /* Center vertically */
+
+    color: #FFF;
+    text-align: center;
+    /*end?*/
+    font-family: Helvetica, sans-serif;
+    font-size: 2.5rem;
+
+    background: #EF2F95;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    top: 0;
+    z-index: 999;
+    position: relative;
+
+    background-color: #F2F19B;
+    color: #000;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+div.headerlang span {
+    color: black;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    /* align-content: center; */
+    align-items: start;
+    justify-items: stretch;
+    margin-top: 10px;
+
+}
+
+.line {
+    border-bottom: 3px solid #000;
+    /* Adjust thickness and color as needed */
+    width: 100%;
+    /* Or set a specific width */
+    position: absolute;
+    bottom: 0;
+}
+
+.column {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(auto);
+    grid-auto-rows: minmax(1fr, auto);
+}
+
+.about-container {
+    position: relative;
+    min-height: 100vh;
+    background-color: #fff;
+    -webkit-transition: transform 2s;
+    -o-transition: transform 2s;
+    transition: transform 2s;
+    text-align: justify;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    color: black;
+}
+
+@media (min-width: 769px) {
+    .posts-container {
+        height: 100vh;
+        overflow-y: auto;
+    }
+}
+
+.posts-container {
+    position: relative;
+    min-height: 100vh;
+    -webkit-transition: transform 2s;
+    -o-transition: transform 2s;
+    transition: transform 2s;
+    text-align: justify;
+}
+
+.posts-container p {
+    color: #000;
+    text-align: justify;
+    font-family: Swiss 721 Condensed;
+    font-size: 0.9375rem;
+    font-style: normal;
+
+    line-height: 100%;
+    /* 1.2375rem */
+    margin: 10px 0px 10px 0px;
+}
+
+/* Assuming 'post' class is applied to the post div */
+.post img {
+    /* Torna a imagem um elemento de bloco */
+    margin: 0 auto;
+    /* Define margens automáticas (0 no topo e na base, automático nas laterais) */
+    width: 95%;
+    /* Set the image width to 25% of its container (quarter of the screen) */
+    max-width: 100%;
+    /* Ensure the image does not exceed its original size */
+    height: auto;
+    /* Maintain the aspect ratio */
+    border: 3px solid black;
+    /* Add a 2px solid black border around the image */
+    border-radius: 10px;
+    /* Apply a 10px border radius for a rounded effect */
+    /* Apply a 10px border radius for a rounded effect */
+    margin: 10px 0px 10px 0px;
+}
+
+/* Assuming 'post' class is applied to the post div */
+.object img {
+    margin: 0 auto;
+    /* Define margens automáticas (0 no topo e na base, automático nas laterais) */
+    width: 95%;
+    /* Set the image width to 25% of its container (quarter of the screen) */
+    max-width: 100%;
+    /* Ensure the image does not exceed its original size */
+    height: auto;
+    /* Maintain the aspect ratio */
+    border: 3px solid black;
+    /* Add a 2px solid black border around the image */
+    border-radius: 10px;
+    /* Apply a 10px border radius for a rounded effect */
+    margin: 10px 0px 10px 0px;
+}
+
+.extra img {
+    margin: 0 auto;
+    /* Define margens automáticas (0 no topo e na base, automático nas laterais) */
+    width: 95%;
+    /* Set the image width to 25% of its container (quarter of the screen) */
+    max-width: 100%;
+    /* Ensure the image does not exceed its original size */
+    height: auto;
+    /* Maintain the aspect ratio */
+    border: 3px solid black;
+    /* Add a 2px solid black border around the image */
+    border-radius: 10px;
+    /* Apply a 10px border radius for a rounded effect */
+    margin: 0px 0px 10px 0px;
+
+}
+
+p {
+    color: #000;
+    text-align: justify;
+    font-family: Swiss 721 Condensed;
+    font-size: 0.9375rem;
+    font-style: normal;
+
+    line-height: 100%;
+    /* 1.2375rem */
+    margin: 0;
+}
+
+h3 {
+    display: flex;
+    margin-top: auto;
+    width: 98%;
+    height: 2rem;
+    flex-shrink: 0;
+    border: 2px solid #000;
+    background: #BFEAFA;
+
+    color: #000;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: Swiss 721 Condensed;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* SOBRE */
+
+.pinkborder {
+    border: 2px solid #EF2F95;
+    margin-top: 10px;
+}
+
+.pinkborder p {
+    margin: 15px 0px 15px 0px;
+}
+
+p.projetos{
+    color: #4BC1DB;
+    font-family: Swiss 721 Condensed;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+div.blu{
+    margin-bottom: 10px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    color: #000;
+}
+
+h2{
+    margin:0;
+}
